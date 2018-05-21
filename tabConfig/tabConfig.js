@@ -5,12 +5,12 @@ $(document).ready(function () {
     microsoftTeams.initialize();
     microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
         microsoftTeams.settings.setSettings({
-            suggestedDisplayName: "Bot Info",
+            suggestedDisplayName: "Auth Sample",
             contentUrl: createTabUrl(),
             entityId: "test123",
             websiteUrl: createTabUrl(),
         });
-      saveEvent.notifySuccess();
+        saveEvent.notifySuccess();
     });
 
     microsoftTeams.settings.setValidityState(true);
